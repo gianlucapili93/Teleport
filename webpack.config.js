@@ -8,7 +8,7 @@ module.exports = {
             directory: path.join(__dirname, './dist'),
         },
         compress: true,
-        port: 8000,
+        port: 80,
     },
     entry: {
         main: path.resolve(__dirname, 'src/index.js'),

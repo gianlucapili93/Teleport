@@ -218,6 +218,15 @@ body {
           width: 100%;
         }
       }
+      .body {
+        #result {
+          .card {
+            &-header {
+              flex-direction: column;
+            }
+          }
+        }
+      }
     }
   }
 }
