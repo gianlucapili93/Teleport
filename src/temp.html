@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+                <h1 class="logo">Teleport</h1>
+                <div class="section-mode-view">
+                    <img class="icon-sun" src=<%= require("./images/sunny-outline.svg") %> alt="icon-light">
+                    <label class="switch">
+                        <input type="checkbox" id="mode-view">
+                        <span class="slider"></span>
+                    </label>   
+                    <img class="icon-moon" src=<%= require("./images/moon-outline.svg") %> alt="icon-night">
+                </div>
+            </div>
+            <div class="card form">
+                <img class="icon-location" src=<%= require("./images/location-outline.svg") %> alt="icon-light">
+                <input class="search" name="input-text" type="text" placeholder="Insert a place..." id="search">
+                <img class="icon-loading" src=<%= require("./images/loading.gif") %> alt="loading">
+                <button class="submit" id="submit">Search</button>
+            </div>
+        </div>
+        <div class="body">
+            <div id="result"></div>
+        </div>
+    </div>
+    <div class="footer">Project Teleport by Gianluca Pili</div>
+</body>
+</html>
