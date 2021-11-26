@@ -21,7 +21,7 @@ module.exports = {
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Open Library',
+            title: 'Teleport',
             filename: 'index.html',
             template: path.resolve(__dirname, 'src/temp.html'),
         }),
